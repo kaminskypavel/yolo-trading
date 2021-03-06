@@ -1,15 +1,18 @@
 {
   "name": "yolo-trading",
   "version": "1.0.0",
-  "main": "index.js",
   "repository": "git@github.com:kaminskypavel/yolo-trading.git",
   "author": "Pavel 'PK' Kaminsky <kaminsky.pavel@gmail.com>",
   "scripts": {
-    "dev": "yarn node ./backend/index.js"
+    "start": "yarn ts-node-dev ./src/index.ts"
   },
   "license": "MIT",
-  "workspaces": [
-    "commons",
-    "backend"
-  ]
+  "dependencies": {
+    "typescript": "^4.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.31",
+    "@yarnpkg/pnpify": "^2.4.0",
+    "ts-node-dev": "^1.1.6"
+  }
 }

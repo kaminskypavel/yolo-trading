@@ -1,6 +1,0 @@
-{
-  "name": "backend",
-  "dependencies": {
-    "commons": "workspace:commons"
-  }
-}
