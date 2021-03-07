@@ -1,7 +1,18 @@
-const RedditApi = require('reddit')
 import {config} from "dotenv";
+import {ApiResult} from "./types";
+
+const RedditApi = require('reddit')
 
 config();
+
+type SORTBY = "new" | "popular" | "rising";
+type FILTER = {
+    after?: string;
+    before?: string;
+    limit?: number;
+    count?: number;
+    show?: string;
+}
 
 class RedditClient {
     private reddit = new RedditApi({
@@ -14,6 +25,11 @@ class RedditClient {
 
     me = () =>
         this.reddit.get('/api/v1/me');
+
+    subreddit = async (subreddit: string, sortby: SORTBY = "new", opts?: FILTER) => {
+        const res: ApiResult = await this.reddit.get(`/r/${subreddit}/${sortby}`, opts);
+        return res.data.children.map(({data}) => data)
+    }
 
 }
 
