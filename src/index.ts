@@ -1,6 +1,6 @@
-import axios from "axios";
+import alpaca from './services/alpaca';
 
 (async () => {
-    const res = await axios.get("https://www.google.com")
-    console.log("hello1! 😀😀")
+    const account = await alpaca.getAccount()
+    console.log(account)
 })();

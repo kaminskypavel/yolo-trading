@@ -16,4 +16,5 @@
 
 - Yarn-2 (berry) [experminetal PnP](https://blog.heroku.com/building-a-monorepo-with-yarn-2#setting-up-yarn)
 
-- [Alpaca](https://alpaca.markets/docs/) Traiding
+- [Alpaca Paper Trading](https://app.alpaca.markets/paper/dashboard/overview)
+- [Alpaca Docs](https://alpaca.markets/docs/get-started-with-alpaca/)

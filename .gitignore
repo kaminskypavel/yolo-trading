@@ -1,4 +1,4 @@
-## yarn 
+## yarn
 yarn-V2-workspaces-simple-monorepo/
 
 # Logs
@@ -110,6 +110,7 @@ dist
 
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
+.idea
 
 # yarn v2
 .yarn/*
