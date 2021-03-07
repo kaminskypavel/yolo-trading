@@ -1,3 +1,6 @@
-import fs from "fs";
+import axios from "axios";
 
-console.log("hello! 😀😀")
+(async () => {
+    const res = await axios.get("https://www.google.com")
+    console.log("hello1! 😀😀")
+})();
